@@ -1,1 +1,67 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+/* Fondo verde */
+body {
+  background-color: green;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para la carta */
+.card {
+  width: 150px;
+  height: 230px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+}
+
+/* Valor de la carta en el centro */
+.card-value {
+  font-size: 60px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/* Palo superior */
+.suit-top {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 30px;
+}
+
+/* Palo inferior */
+.suit-bottom {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 30px;
+  transform: rotate(180deg);
+}
+
+/* Colores de los palos */
+.heart .suit-top,
+.heart .suit-bottom,
+.diamond .suit-top,
+.diamond .suit-bottom {
+  color: red;
+}
+
+.spade .suit-top,
+.spade .suit-bottom,
+.club .suit-top,
+.club .suit-bottom {
+  color: black;
+}
